@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seminars App</title> 
+    <link rel="stylesheet" href="style.css" />    
+
+  </head>
+  <body>
+    <div class="container-one">
+    <div class="directionData" id="directionData">
+      <h1>Office</h1>
+      <span>Office number</span>
+      <input type="number" id="directionNumber" placeholder="" min="0" >
+      <span>Number of participants</span>
+      <input type="number" id="participantNumber" placeholder="" min="0">
+      <button id="directionButton">Add office</button>
+    </div>   
+    <div class="seminarData" id="seminarData">        
+      <h1>Seminar</h1>
+      <span>Invoice amount</span>
+      <input type="number" id="seminarFacture" placeholder="" min="0" value="0"> 
+      <span>Seminara date</span>
+      <input id="seminarDate" type="date">            
+      <span>Number of participants</span>
+      <input id="seminarParticipantNumber" type="number" placeholder="" min="0" value="0" readonly> 
+      <span>Monetary difference</span>
+      <input id="seminarDiference" type="number" placeholder="" min="0" value="0" readonly>
+      <span>Venue of the seminar</span>
+      <input id="seminarCity" placeholder="Enter city...">
+      <button id="seminarButton">Add seminar</button>
+    </div>
+    </div>
+    </div>
+  </div>
+  <div class="container-two">
+    <div class="seminars-heading">
+      <h2>Seminari</h2>
+      <button id="saveBtnToLS" style="display: none;">Save to local storage</button>
+    </div>  
+    <table id="allSeminarsTable" class="all-seminars-table">
+      <thead>
+      <tr>
+        <th>Date Y-M-D</th>
+        <th>City</th>
+        <th>Invoice</th>
+        <th>Participants</th>
+        <th>Difference</th>
+        <th>Office</th>       
+      </tr>
+      </thead>
+      <tbody id="allSeminarsTableBody">
+       
+      </tbody>
+    </table>
+
+    <br>   
+    <input class="email-input" id="emailInput" type="email" placeholder="Enter email address..."> 
+    <a id="sendMail" style="display: none;">Send email</a>
+  </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

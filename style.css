@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    min-height: 100vh;    
+    padding: 2%;
+    background-color: #659DBD;
+    color: azure;
+}
+
+button, a {
+    cursor: pointer;
+    background-color: #DAAD86;
+    color: aliceblue;  
+    padding: 6px;  
+    border: none;
+    border-radius: 10px;
+    font: 1em sans-serif;
+    font-weight: bold;
+    outline: none;
+    text-decoration: none;
+    margin: 3px; 
+}
+
+button:hover, a:hover {
+    background-color: #c1a084;
+}
+
+button:focus, a:focus {
+    background-color: #c1a084;
+}
+
+button:active, a:active {
+    transform: translate(2px, 2px);
+}
+
+.directionData {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+.seminarData {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+.newDirectionContent {
+    display: inline-block;
+    flex-direction: column;
+    margin: 0;
+}
+
+.remove-dir {   
+    display: inline-block; 
+    cursor: pointer;
+    clear: both;
+}
+
+.remove-dir:hover {
+    color: red;    
+}
+
+input {
+    outline: none;
+    border: none;
+    padding: 6px; 
+    margin: 3px; 
+}
+
+input:focus {
+    background-color: rgb(189, 171, 171);
+    color: #fff;
+}
+
+input:read-only {
+    cursor: not-allowed;
+}
+
+.container-two {
+    margin-left: 5%;
+}
+
+table, td, th {
+    border: 1px solid;
+    padding: 2px 6px 2px 6px;
+    word-wrap: break-word;
+}
+  
+table {
+    width: 98%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+tr {
+    cursor: pointer;
+}
+
+tr:hover {
+    background-color: #78b1d2;
+}
+
+.email-input {
+    width: 50%;
+}
+
+@media screen and (max-width: 420px) {
+    body {
+        flex-direction: column;
+    }
+    .container-two {
+        margin-left: 1%;        
+    }
+    .directionData {
+        width: 92vw;
+    }
+    .seminarData {
+        width: 92vw;
+    }
+    tbody {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 920px) and (min-width: 421px) {
+    body {
+        flex-direction: column;
+    }
+    .container-two {
+        margin-left: 1%;        
+    }
+    .directionData {
+        width: 92vw;
+    }
+    .seminarData {
+        width: 92vw;
+    }
+    tbody {
+        width: 90vw;
+    }
+}
+
